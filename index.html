@@ -14,7 +14,16 @@
 </head>
 
 <body>
-    <button id="addBook" class="add-button">+Add book</button>
+    <div class="header-container">
+        <button onclick="displayForm()" id="addBook" class="add-button">+Add book</button>
+    </div>
+    <div class="form-container">
+        <input type="text" id="title" placeholder="title">
+        <input type="text" id="author" placeholder="author">
+        <input type="number" id="pages" placeholder="pages">
+        <label for="read">Have you read it?</label>
+        <input type="checkbox" id="read">
+    </div>
     <script src="app.js"></script>
 </body>
 
