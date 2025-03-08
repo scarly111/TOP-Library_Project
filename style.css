@@ -2,4 +2,27 @@ body {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
+    background-color: #555;
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.add-button {
+    outline: none;
+    border: none;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5px 16px;
+}
+
+.add-button:hover {
+    background-color: #333;
 }
