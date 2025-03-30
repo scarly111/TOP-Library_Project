@@ -22,11 +22,6 @@ function addBookToLibrary(){
     displayBooks();
 }
 
-// use the Book constructor to create a book
-function createBook(){
-
-}
-
 function displayForm(){
     form.style.display = 'flex'
 }
