@@ -1,4 +1,10 @@
-const myLibrary = []
+const myLibrary = [];
+
+const addBook = document.getElementById('addBook');
+
+const form = document.getElementById('form');
+
+const close = document.getElementById('close')
 
 // the book constructor
 function Book(title, author, pages, read) {
@@ -11,9 +17,20 @@ function Book(title, author, pages, read) {
 
 // take a book and add it to the library
 function addBookToLibrary(){
+    const newBook = new Book(title, author, pages, read);
+    myLibrary.push(newBook);
+    displayBooks();
+}
+
+// use the Book constructor to create a book
+function createBook(){
 
 }
 
-function createBook(){
-    
+function displayForm(){
+    form.style.display = 'flex'
+}
+
+function closeForm(){
+    form.style.display = 'none'
 }
