@@ -14,15 +14,24 @@
 </head>
 
 <body>
+    <h1>My Library</h1>
     <div class="header-container">
         <button onclick="displayForm()" id="addBook" class="add-button">+Add book</button>
     </div>
-    <div class="form-container">
-        <input type="text" id="title" placeholder="title">
-        <input type="text" id="author" placeholder="author">
-        <input type="number" id="pages" placeholder="pages">
-        <label for="read">Have you read it?</label>
-        <input type="checkbox" id="read">
+    <div class="form-main" id="form">
+        <div class="form-container">
+            <div class="form-header">
+                <div class="form-tag">Add book</div>
+                <button onclick="closeForm()" id="close" class="close">x</button>
+            </div>
+            <input type="text" id="title" placeholder="title">
+            <input type="text" id="author" placeholder="author">
+            <input type="number" id="pages" placeholder="pages">
+            <div class="is-read">
+                <label id="readLabel" for="read">Have you read it?</label>
+                <input type="checkbox" id="read">
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
