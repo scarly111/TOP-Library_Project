@@ -18,6 +18,7 @@ Book.prototype.toggleRead = function () {
 function addBookToLibrary(title, author, pages, read) {
     const newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
+    saveLibrary();
     displayBooks();
 }
 
@@ -42,6 +43,7 @@ function displayBooks() {
         // Toggle read status
         card.querySelector(".toggle-read").addEventListener("click", () => {
             book.toggleRead();
+            saveLibrary();
             displayBooks();
         });
 
@@ -49,6 +51,7 @@ function displayBooks() {
         card.querySelector(".remove").addEventListener("click", () => {
             const index = myLibrary.findIndex((b) => b.id === book.id);
             myLibrary.splice(index, 1);
+            saveLibrary();
             displayBooks();
         });
 
@@ -86,5 +89,31 @@ dialog.addEventListener("click", (e) => {
     if (!clickedInDialog) {
         dialog.close();
     }
+});
+
+// Local Storage
+
+function saveLibrary() {
+    localStorage.setItem("myLibrary", JSON.stringify(myLibrary));
+}
+
+function loadLibrary() {
+    const storedLibrary = localStorage.getItem("myLibrary");
+    if (storedLibrary) {
+        const parsed = JSON.parse(storedLibrary);
+
+        // Rebuild Book instances with prototype methods
+        myLibrary.length = 0; // Clear current array
+        parsed.forEach(book => {
+            const restoredBook = new Book(book.title, book.author, book.pages, book.read);
+            restoredBook.id = book.id; // Preserve original ID
+            myLibrary.push(restoredBook);
+        });
+        displayBooks();
+    }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    loadLibrary();
 });
 
