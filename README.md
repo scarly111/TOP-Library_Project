@@ -14,7 +14,7 @@ A simple web application for managing a personal library of books. Users can add
 
 ## Live Demo
 
-> https://scarly111.github.io/top-library-project/
+> https://scarly111.github.io/TOP-Library_Project/
 
 ## Technologies Used
 
@@ -27,8 +27,8 @@ A simple web application for managing a personal library of books. Users can add
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/scarly111/top-library-project.git
-cd top-library-project
+git clone https://github.com/scarly111/TOP-Library_Project.git
+cd TOP-Library_Project
 ``` 
 2. Open the App
 
