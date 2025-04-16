@@ -1,36 +1,34 @@
 # TOP-Library_Project
 
-# 📚 My Library App
-
 A simple web application for managing a personal library of books. Users can add books, track their read status, and remove them — all through a clean and responsive interface.
 
-## ✨ Features
+##  Features
 
-- 📖 Add new books via a modal form
-- ✅ Mark books as read or unread
-- ❌ Remove books from your collection
-- 🔄 Persistent UI powered by JavaScript
-- 🆔 Unique book identifiers using `crypto.randomUUID()`
-- 💡 Dialog closes when clicking outside or pressing `Escape`
-- 🖼️ Display books as stylish cards
+-  Add new books via a modal form
+-  Mark books as read or unread
+-  Remove books from your collection
+-  Persistent UI powered by JavaScript
+-  Unique book identifiers using `crypto.randomUUID()`
+-  Dialog closes when clicking outside or pressing `Escape`
+-  Display books as stylish cards
 
-## 🚀 Live Demo
+## Live Demo
 
-> https://scarly111.github.io/TOP-Library_Project/
+> https://scarly111.github.io/top-library-project/
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3 (with custom design and hover states)
 - JavaScript (ES6+ features)
 
-## 🛠️ How to Use
+## How to Use
 
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/scarly111/TOP-Library_Project.git
-cd TOP-Library_Project
+git clone https://github.com/scarly111/top-library-project.git
+cd top-library-project
 ``` 
 2. Open the App
 
